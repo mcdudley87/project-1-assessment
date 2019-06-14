@@ -33,6 +33,7 @@ main {
 #subButton{
 	grid-area: subButton;
 	background-color: gray;
+	color: white;
 	border-radius: 5px;
 	display: grid;
 	height: 55px;
@@ -44,12 +45,14 @@ main {
 
 #subButton:hover {
 	background-color: white;
+	color: gray;
 	transition: 0.15s;
 }
 
 #addButton{
 	grid-area: addButton;
 	background-color: gray;
+	color: white;
 	border-radius: 5px;
 	display: grid;
 	height: 55px;
@@ -61,6 +64,7 @@ main {
 
 #addButton:hover {
 	background-color: white;
+	color: gray;
 	transition: 0.15s;
 }
 
