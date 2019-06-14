@@ -1,0 +1,78 @@
+body, html {
+	background: white;
+}
+
+main {
+	display: grid;
+	grid-gap: 1em;
+	width: 400px;
+	height: 200px;
+	margin-top: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-rows: 20px 1fr; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"		.	 result 	.			"
+	"		subButton input addButton 		"
+	;
+}
+
+#result{
+	grid-area: result;
+	display: grid;
+	height: 50px;
+	width: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: 10;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#subButton{
+	grid-area: subButton;
+	background-color: gray;
+	border-radius: 5px;
+	display: grid;
+	height: 55px;
+	width: 55px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;	
+	margin: 0 auto;
+}
+
+#subButton:hover {
+	background-color: white;
+	transition: 0.15s;
+}
+
+#addButton{
+	grid-area: addButton;
+	background-color: gray;
+	border-radius: 5px;
+	display: grid;
+	height: 55px;
+	width: 55px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+#addButton:hover {
+	background-color: white;
+	transition: 0.15s;
+}
+
+#input{
+	grid-area: input;
+	border: 3px solid grey;
+	border-radius: 5px;
+	display: grid;
+	height: 45px;
+	width: 70px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
